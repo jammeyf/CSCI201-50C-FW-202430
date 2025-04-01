@@ -29,6 +29,18 @@ int main()
     delete p;
     p = nullptr;
 
+    // start lecture lab activity
+    
+    drink *favoriteDrink = new drink("coffee", "medium", 350, "cream", "cherry");
+    favoriteDrink->toString();
+    delete favoriteDrink;
+
+    drink *drinks = new drink[numDrinks];
+
+    delete [] drinks;
+
+    // end lecture lab activity
+
     drink *d;
     d = new drink(inputDrinkBase(), inputDrinkTemperature(), inputDrinkSize(), inputDrinkDairy(), inputDrinkFlavor());
     int numDrinks;
